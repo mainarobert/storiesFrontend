@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTheme } from '../hooks/useTheme'
 import './navbar.css'
+import Searchbar from './Searchbar'
 
 function Navbar() {
 
@@ -10,8 +11,7 @@ function Navbar() {
     <div className='navbar' style={{ background: color }}>
         <nav>
             <Link to='/' className='brand'><h1>Stories</h1></Link>
-            {/* <Link to='/create'>Create a Story</Link> */}
-            <Link to='/search'>Search a story</Link>
+            {/* <Searchbar /> */}
             <Link to='/create'>create a story</Link>
         </nav>
     </div>
